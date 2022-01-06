@@ -528,3 +528,126 @@
 // let str1 = new String("Osama");
 // let str2 = new String("ahmed");
 // let str3 = "Mahmud";
+
+
+///////////////////////////////////////
+// prototype
+// v16
+// kell ma na3mul function jdide fi default property btenshe2 lal
+// function hayde
+
+// el protoype prop li n3amalet la function hye 3ibara 3an object
+// object fi jaweto el property wel value taba3a
+// object =>property:value
+//       =>constructor : function
+
+// kell el object li enta btenshe2ha men el constructor taba3ak kella
+// bturwes el 5awas tab3itha men el prototype taba3 el constructor heda
+// aw el function heda
+
+
+// function User(name) {
+//     this.name = name;
+//     this.welcome = function () {
+//         return `welcome ${this.name}`
+//     };
+// }
+
+// let user1 = new User("ahmed");
+// let user2 = new User("osama");
+
+// console.log(User.prototype);
+
+
+// const arr = [1, 2, 3, 4, 5];
+// console.log(Array.prototype);
+// console.log(arr.reverse());
+
+
+
+
+
+
+
+
+// //////////////////////////////////
+// v17
+// add to prototype chain
+// lama enta tenshe2 object men el constructor taba3ak par example
+//  let user1 = new User("osama")
+
+// lama ta3melo console.log(user1);    => jaweba bel console
+// bya3tik esmo w jaweto fi el properties tab3uno metel
+// name:"osama"
+// welcome : f()
+// w bya3tik el default property li hkina 3ana li hye
+// __proto__: Object
+
+// BI 3ALMAK KIF EDDIF METHOD BEL PROTOTYPE CHAIN
+// FINA NUWRES EL 5AWAS MEN KELL CONSTRCUCTOR W N2ACCESS 3LAYA
+
+
+
+
+
+// function User(name) {
+//     this.name = name;
+//     this.welcome = function () {
+//         return `welcome ${this.name}`
+//     };
+// }
+
+// let user1 = new User("ahmed");
+// let user2 = new User("osama");
+
+// console.log(User.prototype);
+// console.log(user1);
+
+
+// User.prototype.addTitle = function () {
+//     return `Mr. ${this.name}`;
+// };
+
+// console.log(Object.prototype);
+// Object.prototype.elzero = "Elzero Web School"
+// const myObject = { a: 1, b: 2 };
+
+
+
+
+
+// li 3ambi sir hon ano nahna 3m ndif method 3al prototype taba3 el consttuctor
+// taba3na wel method esma addtitle--->
+
+
+// User.prototype.addTitle = function () {
+//     return `Mr. ${this.name}`;
+// };
+
+//hala2 mnfut 3al constructor li 5ele2 bi default mnle2ia 5elane fi ka method
+// la hala w mnerja3 mnfut 3al object li ansha2nehna el jdide mnle2e fia
+// bel name wel welcome w law gina fatahna el proptype mnle2i fiha el methods
+//
+// el engine taba3 javascript bya3mul eh?
+// bi dawwer 3al property brl object nafso
+// iz ma la2ha bu fut ydawer bel prototype
+// ma la2aha bi fut ydawwer bi tene prototype....
+// awal ma yle2iha bi shaggelha
+
+// kif ndif?
+// example2..nehna 3ana object constructor esmo object
+// nehna baddna nhet object constructor ysir aya object bel 3alam  fi yesta3mlo
+//  kif?
+
+
+//
+
+// hala2 aya object bel dene lah tenshe2o as a instance from el object
+// ha ykun muta7 li ano yed5ul 3al property li esma elzero
+
+// /////////////////////////////
+
+
+
+
+
