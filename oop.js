@@ -827,9 +827,233 @@
 
 
 
+
+
 /////////////////////////////////
 // video22
+// class inheritance
+// kif btwres el class men class tenye
+
+
+
+// class User {
+//     constructor(name, email) {
+//         this.name = name;
+//         this.email = email;
+
+//     }
+//     sayHello() {
+//         return `Hello ${this.name}`;
+//     }
+//     showEmail() {
+//         return `Your Email Is ${this.email}`;
+//     }
+//     writeMsg() {
+//         return `Message from Parent Class`;
+//     }
+// }
+
+// class Admin extends User {
+//     constructor(name, email) {
+//         super(name, email);//mishen fina nesta3mla
+//     }
+//     adminMsg() {
+//         return `You are admin`;
+//     }
+//     writeMsg() {
+//         return `Message From child class`;
+//     }
+// }
+
+// let admin1 = new Admin("osama", "o@nn.sa");
 
 
 
 
+////////////////////////
+//video23
+//javascript Accessors Getters & Setters
+
+
+
+
+
+// class User {
+//     constructor(name, email) {
+//         this.name = name;
+//         this.email = email;
+
+//     }
+//     sayHello() {
+//         return `Hello ${this.name}`;
+//     }
+//     get showInfo() {
+//         return `Name : ${this.name}, Email" ${this.email}`;
+//     }
+//     changeName(newName) {
+//         this.name = newName;
+//     }
+//     set changeEmail(newEmail) {
+//         this.email = newEmail;
+//     }
+
+// }
+
+// let user1 = new User("osama", "o@nn.sa");
+
+// console.log(user1.name);
+// console.log(user1.email);
+// console.log(user1.showInfo);
+
+// user1.changeName("mahmoud");
+// console.log(user1.name);
+// console.log(user1.showInfo);
+
+
+// user1.changeEmail = "oooo@gmail.com";
+// console.log(user1.name);
+// console.log(user1.email);
+// console.log(user1.showInfo);
+
+
+////////////////////////////////////////
+
+
+
+
+
+
+//video24
+
+//kell property 3ana bel object fi elha attribute,,zay configurable , writable , enumerable , value....
+
+// Object meta data and descriptor
+// Object meta data
+// writable
+// enumerable
+//configurable
+// =============
+// Object.defineProperty(obj,prop(key yaane),descriptor) // hayde hye static method
+// hayde ya bta3myl define la new peoperty w bet3adel 3al property bi ta3ak
+
+// const myObject = {
+//     a: 1,
+//     b: 2,
+// };
+
+// Object.defineProperty(myObject, "c", {            //nehna len fina ne5la2 c 3adye bas ma 3amalna hik..rehna w 5ala2neha men 5ilel defineProperty
+//  la hata ne2dar n3adel 3laya
+//     //hawde el 4 tahet hene attributes
+// writable: false,                                       //kell holl el property hene by default false
+//     enumerable: true,//bta5line 3ddo aw la2 w ezhro
+//     configurable: true,
+//     value: 3,
+
+// });
+
+// Object.defineProperty(myObject, "c", {
+//     writable: true,
+// });
+
+// // console.log(delete myObject.c); //will no delte cz of configurable
+// myObject.c = 500;
+
+// console.log(myObject);
+
+// console.log("#".repeat(10));
+
+// for (let prop in myObject) {
+//     console.log(prop, myObject[prop]);
+// }
+
+// console.log("#".repeat(10));
+// console.log(Object.getOwnPropertyNames(myObject));
+
+//////////////////////
+
+
+
+
+
+
+
+//video25
+// object.defineProperties
+
+
+// const myObject = {
+//     a: 1,
+//     b: 2,
+// };
+
+// Object.defineProperty(myObject, "a", {
+//     writable: false,
+//     enumerable: false,
+//     configurable: false,
+//     value: 500,
+// });
+
+// Object.defineProperty(myObject, "c", {
+//     value: 3,
+// });
+
+// myObject.d = 4;
+
+// Object.defineProperties(myObject, {
+//     e: {
+//         value: 5,
+//     },
+//     f: {
+//         value: 6,
+//     },
+//     g: {
+//         value: 7,
+//     },
+// });
+
+// console.log(myObject);
+// console.log(Object.getOwnPropertyDescriptor(myObject, "a"));
+// console.log(Object.getOwnPropertyDescriptor(myObject, "c"));
+// console.log(Object.getOwnPropertyDescriptor(myObject, "d"));
+
+
+// console.log(Object.getOwnPropertyNames(myObject));
+// console.log(Object.keys(myObject));
+
+
+
+//////////////////////////////
+
+
+
+
+
+
+// v26
+// important info
+
+// class User {
+//     constructor(fName, lName, age, email) {
+//         this.name = {
+//             first: fName,
+//             last: lName,
+//         };
+//         this.age = age;
+//         this.email = email;
+//     }
+//     sayHello = function () {
+//         return `say Hello`
+//     };
+//     sayHi() {
+//         return `say hi`;
+//     }
+// }
+
+// let user1 = new User("Osama", "Elzero", 37, "o@aa");
+// console.log(user1.name.first);
+// console.log(user1.name.age);
+// console.log(user1.age);
+// console.log(user1.sayHello());
+// console.log(user1.sayHi());
+
+//////////////////////////////
