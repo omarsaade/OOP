@@ -651,3 +651,185 @@
 
 
 
+
+
+// video18
+// EXT Constructor Features
+
+// console.log(String.prototype);
+
+// String.prototype.zFill = function (width) {
+//     let theResult = this;
+
+//     while (theResult.length < width) {
+//         theResult = `0${theResult}`;
+//     }
+//     return theResult.toString();
+// };
+
+// console.log("12".zFill(6));
+// console.log("122".zFill(6));
+// console.log("22".zFill(6));
+// console.log("132".zFill(6));
+// console.log("1223".zFill(6));
+
+// String.prototype.sayYouLoveMe = function () {
+//     return `I love u ${this}`;
+// }
+// console.log("omar".sayYouLoveMe());
+
+
+
+
+
+
+////////////////////////////////
+// VIDEO19
+// 1-every Object has a prototype
+// 2-protype chain ends with Object.prototype
+// 3-I javascript Function is Object
+
+
+// function User(name) {
+//     /*
+//             1- create empty Object
+//             2-Assign the new object to this Context
+//             3-New Object Created Prototype = function prototype
+//             this = {};
+//             this.__proto__ = User,__proto__
+//      */
+//     this.name = name;
+//     /*
+// 4- REturn the New Object
+// return this
+//     */
+
+//     if (!(this instanceof User)) {
+//         // throw new Error("Must Be Called With New keyword");
+//         console.log("error");
+//     }
+
+//     // Es6
+//     // if (!new.target) {
+//     //     // throw new Error("Must Be Called With New keyword");
+//     //     console.log("Error");
+
+//     // }
+
+// }
+
+// let user1 = new User("Osama");
+// let user2 = User("ahmed");
+// console.log(User.prototype);
+// console.log(user1);
+
+// let myArray = [1, 2, 3, 4];
+
+
+// video20
+// class suntax and Introduction
+
+
+
+// first meth(tradi)
+// function User(name, email) {
+//     this.name = name;
+//     this.email = email;
+//     this.sayHello = function () {
+//         return `Hello ${this.name}`;
+//     };
+// }
+
+// let user1 = new User("osama");
+// let user2 = new User("ahmed");
+
+// console.log(user1);
+// console.log(user2);
+
+
+
+
+// methd2(using class)
+
+// class User {
+//     constructor(name, email) {
+//         this.name = name;
+//         this.email = email;
+
+//     }
+//     sayHello() {
+//         return `Hello ${this.name}`;
+//     }
+//     showEmail() {
+//         return `Your Email Is ${this.email}`;
+//     }
+// }
+
+// let user1 = new User("osama", "ammur@gmail.com");
+// let user2 = new User("ahmed", "abudsamman@gmail.com");
+
+// console.log(user1);
+// console.log(user2);
+
+
+
+
+
+
+
+// video21
+// Class Static Properties and Methods
+
+
+
+// class User { // class metel function ta2riban
+//     static counter = 0; // varaiable esma counter
+//     // w hye tab3an 5assa bel class bas
+//     // a = 0
+
+//     constructor(name, email, counter) {
+//         this.name = name;//lal object el jdide
+//         this.email = email;
+//         this.counter = counter;//5assa bel prameter bas
+//         //ma 5assa bel class
+//         User.counter++;// teb3a lal class User
+//         // el property di 5assa  bel class li esmo user
+//         // mihsen hik mafina n2ul this.user
+//     }
+//     sayHello() {
+//         return `Hello ${this.name}`;
+//         // byetba3o lal object el jdide yalli btenshe2a
+//     }
+
+//     showEmail() {
+//         return `Your Email Is ${this.email}`;
+//     }
+
+//     // static Methods
+//     static countObjects = function () {
+//         return `${this.counter} Objects Created.`;
+//         // bt3ed enta kam marra bta3mul object men el class
+//         // aya function
+//     };
+// }
+
+// let user1 = new User("osama", "o@nn.sa", 2);
+// let user2 = new User("ahmed", "o@gmail.comm", 2);
+// let user3 = new User("ahmed", "o@nn.sa", 2);
+// let user4 = new User("ahmed", "o@nn.sa", 2);
+// //let user2 = User("ahmed","a2nn.sa");//
+
+// console.log(typeof User); // Function
+// console.log(User.prototype); // Function
+// console.log(User === User.prototype.constructor);
+// console.log(user1.countObjects()); //error
+// console.log(User.countObjects());
+
+
+
+/////////////////////////////////
+// video22
+
+
+
+
