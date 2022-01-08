@@ -48,6 +48,7 @@
 
 
 
+
 //     // methods
 //     getFullName: function () {
 //         return `Full name :${user.firstname} ${user.lastname}`;
@@ -59,18 +60,18 @@
 // // }
 // // Accessing Object Properties
 // console.log(user.firstname);//Dot notation
-// console.log(user.lastname);//string
-// console.log(user["firstname"]);//Bracket Notation
-// console.log(typeof user.firstname) //string;
+//     console.log(user.lastname);//string
+//     console.log(user["firstname"]);//Bracket Notation
+//     console.log(typeof user.firstname) //string;
 // //
 // // Accesing Object Methods
 // console.log(typeof user.getFullName()); //string
-// console.log(typeof user.getFullName); //function
-// console.log(user.getAge());
-// //
-// //
-// console.log(user.adresses.getMainAddress());
-// console.log(user.adresses.ksa);
+//     console.log(typeof user.getFullName); //function
+//     console.log(user.getAge());
+//     //
+//     //
+//     console.log(user.adresses.getMainAddress());
+//     console.log(user.adresses.ksa);
 
 
 
@@ -158,6 +159,8 @@
 // console.log(mainObj.hasDiscount);
 // console.log(mainObj.showMsg());
 //
+
+
 // let otherObj = Object.create(mainObj);
 //
 // otherObj.hasDiscount = false;
@@ -686,7 +689,7 @@
 ////////////////////////////////
 // VIDEO19
 // 1-every Object has a prototype
-// 2-protype chain ends with Object.prototype
+// 2-prototype chain ends with Object.prototype
 // 3-I javascript Function is Object
 
 
@@ -1012,7 +1015,7 @@
 // });
 
 // console.log(myObject);
-// console.log(Object.getOwnPropertyDescriptor(myObject, "a"));
+// console.log(Object.getOwnPropertyDescriptor(myObject, "a")); // bt2elak el attribute shu awda3on yaane iza true  aw false kell wahde
 // console.log(Object.getOwnPropertyDescriptor(myObject, "c"));
 // console.log(Object.getOwnPropertyDescriptor(myObject, "d"));
 
@@ -1056,4 +1059,3 @@
 // console.log(user1.sayHello());
 // console.log(user1.sayHi());
 
-//////////////////////////////
